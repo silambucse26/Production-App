@@ -8,14 +8,6 @@ const PRODUCT_NAMES_TA = {
     name: 'மைடிப் ஆண்டிசெப்டிக் ஃபார்முலேஷன் (MiDip 700L)',
     category: 'கால்நடை & சுகாதார மேற்பூச்சு மருந்து',
   },
-  'MED-101': {
-    name: 'குழந்தைகளுக்கான திரவ சஸ்பென்ஷன் மருந்து (Pediatric Oral)',
-    category: 'வாய்வழி திரவ மருந்து',
-  },
-  'MED-202': {
-    name: 'மருத்துவ குளோரெக்சிடின் ஆண்டிசெப்டிக் கரைசல் (Chlorhexidine)',
-    category: 'மருத்துவமனை ஆண்டிசெப்டிக்',
-  },
 };
 
 export default function ProductCatalog({
@@ -43,8 +35,8 @@ export default function ProductCatalog({
         </p>
       </div>
 
-      {/* 3 Simple Product Cards: Image, ID, Name */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* Product Display - Centered and elegant for single MiDip product */}
+      <div className={products.length === 1 ? 'max-w-md mx-auto' : 'grid grid-cols-1 md:grid-cols-3 gap-6'}>
         {products.map((prod) => {
           const taData = PRODUCT_NAMES_TA[prod.id];
           const displayName = language === 'ta' && taData ? taData.name : prod.name;
@@ -58,7 +50,7 @@ export default function ProductCatalog({
                 onSelectProduct(prod);
                 onStartPreCheck(prod);
               }}
-              className="group bg-white rounded-3xl border border-slate-200 hover:border-indigo-500 overflow-hidden transition-all duration-300 hover:shadow-xl cursor-pointer flex flex-col shadow-sm hover:-translate-y-1"
+              className="group bg-white rounded-3xl border border-slate-200 hover:border-indigo-500 overflow-hidden transition-all duration-300 hover:shadow-2xl cursor-pointer flex flex-col shadow-sm hover:-translate-y-1"
             >
               {/* Product Image with ID Badge */}
               <div className="aspect-[4/3] w-full relative overflow-hidden bg-slate-100">
