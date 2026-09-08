@@ -1,0 +1,6 @@
+{
+  "appId": "com.chimetech.pharmacraft",
+  "appName": "Chimetech PharmaCraft",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
