@@ -4,16 +4,16 @@ export const MAX_LITRES = 700;
 
 export const PRODUCTS = [
   {
-    id: 'MIDIP-700',
-    name: 'MiDip Anti-Septic Formulation',
-    shortName: 'MiDip',
+    id: 'INTAS-700',
+    name: 'Intas Order Product',
+    shortName: 'Intas Order',
     category: 'Topical Veterinary & Healthcare Dip',
     badgeVariant: 'primary',
     image: '/images/products/midip_antiseptic.jpg',
     defaultLitres: 700,
     shelfLife: '24 Months',
     storageCondition: 'Store in cool ventilated warehouse below 30°C',
-    description: 'MiDip protective anti-septic teat dip solution. Specially calibrated for 700 Litres batch compounding with multi-solution blending.',
+    description: 'Intas Order Product protective anti-septic teat dip solution. Specially calibrated for 700 Litres batch compounding with multi-solution blending.',
     methodSummary: 'Step 1 (Main Tank): Water (70 kg) & Polyvinyl Alcohol (PVA) (466.666 kg) → Step 2 & 3 (Separate Container B): Dissolve Molecular Iodine (70g) in Ethanol (14L), add 1% Decolourization Solution (14L), 30-min Decolourization to make "Solution I" → Step 4: Add Glycerine (21 kg) → Step 5: Dissolve PEG 6000 (0.875 kg) in 14L water separately & add → Step 6: Add Sodium Benzoate (0.7 kg) → Step 7: Slowly add Solution I mixture → Step 8: Add Fast Green FCF Colour / Dye (0.21 kg) → Step 9: Calculate weight balance & Add Water q.s. to final 700 kg.',
     preChecks: [
       'Confirm Main Manufacturing Tank (Tank 1) is sanitized, clean, and bottom drain valve locked',

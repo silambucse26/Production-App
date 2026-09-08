@@ -34,9 +34,9 @@ export default function StepCard({
   const [showDetails, setShowDetails] = useState(false);
   const t = translations[language] || translations.en;
 
-  // If in Tamil and viewing MiDip-700, provide fluent Tamil step instructions scaled for chosen litres
+  // If in Tamil and viewing Intas Order / MiDip, provide fluent Tamil step instructions scaled for chosen litres
   const tamilStep =
-    language === 'ta' && activeProduct.id === 'MIDIP-700'
+    language === 'ta' && (activeProduct.id === 'INTAS-700' || activeProduct.id === 'MIDIP-700')
       ? getTamilStep(step.stepNumber, litres) || MIDIP_STEPS_TA[step.stepNumber]
       : null;
   const displayTitle = tamilStep?.title || step.title.replace(/^Step\s*\d+\s*[-–]\s*/i, '');

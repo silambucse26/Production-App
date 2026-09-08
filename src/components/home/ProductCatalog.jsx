@@ -4,8 +4,12 @@ import { playSound } from '../../utils/audio';
 import { translations } from '../../utils/translations';
 
 const PRODUCT_NAMES_TA = {
+  'INTAS-700': {
+    name: 'இன்டாஸ் ஆர்டர் தயாரிப்பு (Intas Order Product 700L)',
+    category: 'கால்நடை & சுகாதார மேற்பூச்சு மருந்து',
+  },
   'MIDIP-700': {
-    name: 'மைடிப் ஆண்டிசெப்டிக் ஃபார்முலேஷன் (MiDip 700L)',
+    name: 'இன்டாஸ் ஆர்டர் தயாரிப்பு (Intas Order Product 700L)',
     category: 'கால்நடை & சுகாதார மேற்பூச்சு மருந்து',
   },
 };
